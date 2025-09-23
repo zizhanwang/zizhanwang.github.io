@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zizhan Wang — Personal Homepage</title>
+  <meta name="description" content="Personal homepage of Zizhan Wang — projects, interests, and contact information.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Zizhan Wang</h1>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <h2> Zizhan Wang</h2>
+        <p>Welcome to my personal homepage. </p>
+        <a class="btn primary" href="#projects">View Projects</a>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container">
+        <h3>About</h3>
+        <p>
+          COMP 4461 personal HCI project diaries
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section">
+      <div class="container">
+        <h3>Projects</h3>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h4>Project A </h4>
+            <p>...</p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Vanilla JS</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <h4>Project B </h4>
+            <p>...</p>
+            <div class="tags">
+              <span class="tag">D3</span>
+              <span class="tag">Charts</span>
+              <span class="tag">UX</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <h4>Project C </h4>
+            <p>...</p>
+            <div class="tags">
+              <span class="tag">Node</span>
+              <span class="tag">Express</span>
+              <span class="tag">JWT</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h3>Contact</h3>
+        <p>
+           <a href="mailto:wangzizhan2021@163.com">wangzizhan2021@163.com</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Zizhan Wang</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
